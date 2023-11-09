@@ -1,0 +1,2 @@
+Connect-SPOService -Url https://yourtenant-admin.sharepoint.com -credential myAdmin@yourtenant.onmicrosoft.com
+Add-SPOSiteCollectionAppCatalog -Site https://yourtenant.sharepoint.com/sites/SVRS-DEV1
