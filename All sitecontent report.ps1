@@ -1,8 +1,8 @@
-﻿#Connect-SpoService -URL https://nttdatagroup-admin.sharepoint.com
-$csv = Import-csv -Path "C:\temp\OneDrive\Chainalytics\testing.csv"#contain site column called "SiteURL"
-$OutReport= "C:\temp\OneDrive\Chainalytics\targetreport2607MST.csv"
-$username="spmigration8.svc@nttdata.com"
-$password  ="gI=ZN%7hD8kq9*5@@&8%8#9)"
+﻿#Connect-SpoService -URL https://tenant-admin.sharepoint.com
+$csv = Import-csv -Path "C:\temp\testing.csv"#contain site column called "SiteURL"
+$OutReport= "C:\temp\targetreport2607MST.csv"
+$username="XXXXXXXXX"
+$password  ="XXXXXXXXXXX"
 $logpath = "C:\temp\FolderCreation_Log_{0}.txt" -f [DateTime]::Now.ToString("yyyy-MM-dd_hh-mm-ss")
 $encpassword = convertto-securestring -String $password -AsPlainText -Force
 $cred = new-object -typename System.Management.Automation.PSCredential -argumentlist $username, $encpassword
